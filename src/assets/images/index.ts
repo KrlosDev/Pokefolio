@@ -1,3 +1,3 @@
-import heroImage from "./container_bg.png"
+import heroImage from "./profile.png"
 
 export{heroImage}
