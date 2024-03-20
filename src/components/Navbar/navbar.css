@@ -3,10 +3,10 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	height: 80px;
-	padding: 0 2rem;
+	padding: 0 8rem;
 	background-color: var(--primary-color);
 	color: var(--white-text);
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 a{
     text-decoration: none;
@@ -46,13 +46,16 @@ nav {
 }
 .navbar-button:hover{
     height: 100%;
-    background-color: var(--secondary-color);
-}
-.active-btn{
     background-color: var(--tertiary-color);
 }
+.active-btn{
+	box-shadow: inset 0px -7px 0px 0px var(--tertiary-color);
+}
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1280px) {
+	header{
+		padding: 0 2rem;
+	}
 	header .nav-btn {
 		display: block;
 		opacity: 1;
@@ -94,9 +97,6 @@ nav {
     .navbar-button:hover{
         height: 5%;
         background-color: var(--secondary-color);
-        border-radius: 5px;
-    }
-    .active-btn{
         border-radius: 5px;
     }
 }

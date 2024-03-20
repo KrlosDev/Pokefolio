@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
       <nav ref={navRef}>
         {navLinks.map((link: { id: string; title: string }) => (
           <div key={link.id} className={`navbar-button ${active === link.title ? "active-btn":""}`}>
-            <a onClick={()=>setActive(link.title)} href={`#${link.id}`}>{link.title}</a>
+            <a onClick={() => { setActive(link.title); showNavbar(); }} href={`#${link.id}`}>{link.title}</a>
           </div>
         ))}
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
