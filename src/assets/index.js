@@ -33,8 +33,10 @@ import lios from "./company/lios.png";
 import tripguide from "./tripguide.png";
 import portfolio from "./portfolio.gif";
 import pokemon from "./images/pokeapi.png"
+import linkedIn from "./linkedin.svg"
 
 export {
+  linkedIn,
   pokemon,
   aws,
   vue,

@@ -3,7 +3,7 @@ import {motion} from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import {styles} from '../styles';
 import {SectionWrapper} from '../hoc';
-import { slideIn } from '../utils/motion';
+import { fadeIn } from '../utils/motion';
 import { Alert} from '@mui/material';
 
 const Contact = () => {
@@ -48,11 +48,11 @@ const Contact = () => {
   return (
     <>
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex overflow-hidden'>
-      <motion.div variants={slideIn("left", "tween", 0.2, 1)} className='flex-[1] rounded-2xl green-pink-gradient p-1'>
+      <motion.div variants={fadeIn("down", "spring", 0.2, 1)} className='rounded-2xl green-pink-gradient p-1 max-w-[500px] min-w-[360px] m-auto'>
         <div className=' bg-primary rounded-2xl p-6 '>
-        <h3 className={`${styles.sectionHeadText} text-white`}>Get in Touch</h3>
+        <h3 className={`${styles.sectionHeadText} text-white md:text-[40px]`}>Get in Touch</h3>
         <form ref={formRef} onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'>
+          className='mt-4 flex flex-col gap-8'>
           <label className='flex flex-col'><span className='text-white font-medium mb-4'>Your Name</span>
             <input
               required={true}
@@ -78,7 +78,7 @@ const Contact = () => {
           <label className='flex flex-col'><span className='text-white font-medium mb-4'>Message</span>
             <textarea
               required={true}
-              rows='7'
+              rows='2'
               name='message'
               value={form.message}
               onChange={handleChange}
