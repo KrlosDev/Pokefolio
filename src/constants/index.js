@@ -26,7 +26,9 @@ import {
     calteks,
     vue,
     aws,
-    pokemon
+    pokemon,
+    mernChat,
+    socialX
   } from "../assets";
   
   export const navLinks = [
@@ -224,6 +226,52 @@ import {
       ],
       image: pokemon,
       source_code_link: "https://github.com/KrlosDev/PokemonApi_interactions",
+    },
+    {
+      name: "Chat in Real time",
+      description:
+        "This full-stack project served as a testing module for a real-time application. Additionally, the server efficiently manages attachments.",
+      tags: [
+        {
+          name: "ReactJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "NodeJs",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "WebSockets",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: mernChat,
+      source_code_link: "https://github.com/KrlosDev/mern-chat",
+    },
+    {
+      name: "Social Media App",
+      description:
+        "An advanced MERN-based social media platform integrating Redux for state management.",
+      tags: [
+        {
+          name: "ReactJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "NodeJs",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Redux",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "MongoDB",
+          color: "green-text-gradient",
+        },
+      ],
+      image: socialX,
+      source_code_link: "https://github.com/KrlosDev/Social-Media-App",
     },
     {
       name: "Portfolio 1.0",

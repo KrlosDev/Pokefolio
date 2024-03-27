@@ -22,6 +22,8 @@ import threejs from "./tech/threejs.svg";
 import oracle from "./tech/oracle.png";
 import vue from "./tech/vue.png"
 import aws from "./tech/aws.png"
+import mernChat from "./mern-chat.png"
+import socialX from "./socialX.png"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -36,6 +38,8 @@ import pokemon from "./images/pokeapi.png"
 import linkedIn from "./linkedin.svg"
 
 export {
+  socialX,
+  mernChat,
   linkedIn,
   pokemon,
   aws,
