@@ -48,7 +48,7 @@ const Contact = () => {
   return (
     <>
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex overflow-hidden'>
-      <motion.div variants={fadeIn("down", "spring", 0.2, 1)} className='rounded-2xl green-pink-gradient p-1 max-w-[500px] min-w-[360px] m-auto'>
+      <motion.div variants={fadeIn("down", "spring", 0.2, 1)} className='rounded-2xl green-pink-gradient p-1 max-w-[500px] min-w-[330px] m-auto'>
         <div className=' bg-primary rounded-2xl p-6 '>
         <h3 className={`${styles.sectionHeadText} text-white md:text-[35px]`}>Get in Touch</h3>
         <form ref={formRef} onSubmit={handleSubmit}
