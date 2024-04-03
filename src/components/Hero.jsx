@@ -42,9 +42,8 @@ const Hero = () => {
               className={`${styles.heroSubText} mt-2 text-primary`}
               transition={{ type: "smooth", delay: 1.3, duration: 0.5 }}
             >
-              I’m a software engineer specializing in building (and occasionally
-              designing) exceptional experiences. Currently. I'm focused of
-              building accesible scalable digital solutions.{" "}
+             I’m a software engineer specializing in building (and occasionally designing) exceptional experiences. 
+             Currently, I'm focused on building accessible, scalable digital solutions.
             </motion.p>
           </div>
         </div>

@@ -19,12 +19,11 @@ const Navbar = () => {
    <div className='w-full flex justify-between items-center max-w-7xl mx-auto h-[3rem]'>
     <Link to="/" className='flex items-center gap-2' 
     onClick={()=>{setActive(""); window.scrollTo(0,0)}}>
-      {/* <img src={logo}alt="logo" className="w-[3rem] object-contain"/> */}
-      <motion.p initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.5, duration: 0.5, type:"smooth" }} className='text-white text-[18px] font-bold cursor-pointer flex'>Carlos <span className='sm:block'> &nbsp;| Software Engineer</span></motion.p>
+      <motion.p initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.5, duration: 0.5, type:"smooth" }} className='text-white text-[18px] font-bold cursor-pointer flex items-center'><img src={logo}alt="logo" className="w-[3rem] object-contain"/> <span className='sm:block'> &nbsp;| Software Engineer</span></motion.p>
     </Link>
     {/*Desktop Navigation below*/}
     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7, duration: 0.5, type:"smooth"}}>
-    <ul className='list-none hidden sm:flex flex-row gap-10'>
+    <ul className='list-none hidden lg:flex flex-row gap-8'>
       {navLinks.map((link)=>(
         <li key={link.id} className={`hover:text-secondary text-[18px] font-medium cursor-pointer`} 
                 onClick={() => setActive(link.title)}>
@@ -38,7 +37,7 @@ const Navbar = () => {
     </motion.div>
     {/*End of Desktop Nav*/}
      {/*Mobile Navigation below*/}
-     <div className='sm:hidden flex flex-1 justify-end items-center'>
+     <div className='lg:hidden flex flex-1 justify-end items-center'>
         <img src={toggle ? close : menu} alt="menu" className='w-[28px] h-[28px] object-contain cursor-pointer' onClick={()=>setToggle(!toggle)}/>
         <div className={`${!toggle ? 'hidden' : 'flex'} p-6 bg-primary absolute top-24 right-0 mx-4 my-2 min-w[140px] z-10 rounded-xl`}>
          <ul className='list-none flex justify-end items-start flex-col gap-4 h-full'>
