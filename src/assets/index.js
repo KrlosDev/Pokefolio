@@ -33,7 +33,7 @@ import cwp from "./company/cwp.jpg";
 import lios from "./company/lios.png";
 
 import tripguide from "./tripguide.png";
-import portfolio from "./portfolio.gif";
+import portfolio from "./portfolio.png";
 import pokemon from "./images/pokeapi.png"
 import linkedIn from "./linkedin.svg"
 

@@ -17,7 +17,8 @@ module.exports = {
         navigation:"inset 0px -3px 0px 0px #0E6987"
       },
       screens: {
-        xs: "450px",
+        xs: "375px",
+        xxs: "250px"
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
